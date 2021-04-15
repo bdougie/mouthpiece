@@ -7,7 +7,7 @@ ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
   }
 
   if( (flags.mod || flags.broadcaster) && command === "so" ) {
-    ComfyJS.Say( "everyone go follow https://twitch.tv/${message}" );
+    ComfyJS.Say( `everyone go follow https://twitch.tv/${message}` );
   }
 }
 ComfyJS.Init( process.env.TWITCHUSER, process.env.OAUTH );
