@@ -4,7 +4,7 @@ This piece is the mouth of chat commands on
 https://twitch/bdougieYO/chat
 
 
-This bot is powered by [ComfyJS](https://github.com/instafluff/ComfyJS#sending-chat-messages) to send chat messages with an OAUTH password for connecting to chat.
+This bot is powered by [ComfyJS](https://github.com/instafluff/ComfyJS#sending-chat-messages) to send chat messages with a [Twitch OAUTH](https://twitchapps.com/tmi/) password for connecting to chat.
 
 ## Setup
 
