@@ -1,6 +1,6 @@
 name: "PR Audit"
 on:
-  pull_request_target:
+  pull_request:
     types:
       - opened
       - edited
@@ -15,6 +15,6 @@ jobs:
   semantics:
     runs-on: ubuntu-latest
     steps:
-      - uses: amannn/action-semantic-pull-request@v1.2.0
+      - uses: amannn/action-semantic-pull-request@v3.4.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
