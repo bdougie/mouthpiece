@@ -2,7 +2,7 @@ const ComfyJS = require("comfy.js");
 require('dotenv').config()
 
 ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
-  if( command === "test" ) {
+    if( command === "test" ) {
     ComfyJS.Say( "replying to !test" );
   }
   
