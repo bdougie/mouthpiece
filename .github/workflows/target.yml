@@ -5,6 +5,7 @@ on:
       - opened
       - edited
       - synchronize
+      - reopened
     branches:
       - "release/*"
       - "patch/*"
