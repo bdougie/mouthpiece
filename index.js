@@ -5,6 +5,10 @@ ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
   if( command === "test" ) {
     ComfyJS.Say( "replying to !test" );
   }
+
+  if((!flags.subscriber || !flags.vip) && command === "say" ) {
+    ComfyJS.Say( "You need to subscribe to use this command." );
+  }
   
   if( command === "discord" ) {
     ComfyJS.Say( "https://discord.com/invite/U2peSNf23P" );
@@ -22,6 +26,10 @@ ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
     ComfyJS.Say( "https://twitter.com/bdougieYO" );
   }
   
+  if( command === "tiktok" || command === "tok" ) {
+    ComfyJS.Say( "https://www.tiktok.com/@bdougieyo" );
+  }
+
   if( command === "sauced" ) {
     ComfyJS.Say( "https://opensauced.pizza" );
   }
@@ -37,7 +45,7 @@ ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
   if( command === "commands" ) {
     ComfyJS.Say( "!github, !title, !yo, !twitter, !coc, !yt, !sauced, !twitter" );
   }  	
-  
+
   if( (flags.mod || flags.broadcaster) && command === "so" ) {
     ComfyJS.Say( `everyone go follow https://twitch.tv/${message}` );
   }
